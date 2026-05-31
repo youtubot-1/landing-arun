@@ -1,0 +1,1669 @@
+<!-- LemonSqueezy checkout URL is live: maestroarun.lemonsqueezy.com/checkout -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%234A1520'/><text x='16' y='24' text-anchor='middle' font-size='20'>🌿</text></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A1520">
+<title>27 Remedios Ancestrales del Maestro Arun</title>
+<meta name="description" content="Descubre los 27 remedios ancestrales que el Maestro Arun ha reunido tras más de cuatro décadas de estudio en medicina natural, tradiciones ayurvédicas y sabiduría de plantas.">
+
+<style id="critical-inline">
+  .hero { background: #1a0810 !important; }
+  .hero-title { color: #F5EFE0; }
+  .hero-body { color: rgba(245,239,224,0.72); }
+  .hero-eyebrow { color: rgba(212,168,67,0.7); }
+  .cta-main { background: #9A6B2A; color: #FBF7EE; }
+  .page { background: #F5EFE0; }
+  .manuscript { background: #FBF7EE; }
+  .dark-bg, .maestro, .final { background: #2d0f18; }
+  .cred-strip { background: #6B2535; }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Caveat:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Caveat:wght@400;600&display=swap" rel="stylesheet"></noscript>
+
+<script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --parchment:      #F5EFE0;
+  --parchment-dark: #E8D9C0;
+  --parchment-deep: #CDB898;
+  --ink:            #1C1008;
+  --ink-faded:      #4A3020;
+  --ink-light:      #7A6045;
+  --maroon:         #4A1520;
+  --maroon-mid:     #6B2535;
+  --maroon-warm:    #8B3A4A;
+  --ochre:          #9A6B2A;
+  --gold:           #C4943A;
+  --gold-light:     #D4A843;
+  --sepia:          #8B6014;
+  --rust:           #7A2B1E;
+  --cream-white:    #FBF7EE;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  background: var(--maroon);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+/* ── GRAIN OVERLAY ── */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.55;
+}
+
+/* ── PAGE WRAPPER ── */
+.page {
+  max-width: 440px;
+  margin: 0 auto;
+  background: var(--parchment);
+  min-height: 100vh; min-height: -webkit-fill-available;
+  position: relative;
+}
+
+/* ── SECTION TEXTURES ── */
+.paper {
+  background: var(--cream-white);
+  position: relative;
+}
+.paper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 27px,
+      rgba(160,120,80,0.07) 27px,
+      rgba(160,120,80,0.07) 28px
+    );
+  pointer-events: none;
+}
+.parchment-bg { background: var(--parchment); position: relative; }
+.dark-bg { background: var(--maroon); position: relative; }
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(175deg, #1a0810 0%, #2d0f18 35%, #3d1620 70%, #2d0f18 100%);
+  padding: 52px 24px 44px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh; min-height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-botanicals {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.botanical {
+  position: absolute;
+  font-size: 64px;
+  opacity: 0.05;
+  filter: blur(1px);
+}
+.b1 { top: -10px; left: -20px; transform: rotate(-25deg); font-size: 80px; }
+.b2 { top: 30px; right: -15px; transform: rotate(15deg); font-size: 70px; }
+.b3 { bottom: 70px; left: -10px; transform: rotate(35deg); font-size: 90px; opacity: 0.035; }
+.b4 { bottom: 30px; right: -20px; transform: rotate(-20deg); font-size: 75px; opacity: 0.04; }
+.b5 { top: 45%; left: 50%; transform: translate(-50%,-50%) rotate(10deg); font-size: 120px; opacity: 0.025; }
+
+.hero-eyebrow {
+  font-family: 'Caveat', cursive;
+  font-size: 15px;
+  color: rgba(212,168,67,0.7);
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+  animation: fadeUp 1.2s ease both;
+}
+
+.hero-ornament {
+  color: var(--gold-light);
+  font-size: 18px;
+  letter-spacing: 8px;
+  opacity: 0.55;
+  margin-bottom: 20px;
+  animation: fadeUp 1.4s ease both;
+}
+
+.hero-title {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 33px;
+  line-height: 1.22;
+  color: var(--parchment);
+  font-weight: 400;
+  margin-bottom: 22px;
+  animation: fadeUp 1.6s ease both;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.55);
+}
+.hero-title em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.hero-divider {
+  width: 56px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
+  margin: 0 auto 22px;
+  animation: fadeUp 1.7s ease both;
+}
+
+.hero-body {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.85;
+  color: rgba(245,239,224,0.72);
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 36px;
+  animation: fadeUp 1.8s ease both;
+}
+
+.hero-cta-wrap {
+  animation: fadeUp 2s ease both;
+  width: 100%;
+}
+
+.cta-main {
+  display: block;
+  width: 100%;
+  padding: 18px 20px;
+  background: linear-gradient(135deg, #9A6B2A 0%, #C4943A 50%, #9A6B2A 100%);
+  background-size: 200% auto;
+  color: var(--cream-white);
+  border: none;
+  border-radius: 4px;
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-position 0.4s ease;
+  box-shadow: 0 4px 28px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.12);
+  text-decoration: none;
+  line-height: 1.3;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta-main:hover { background-position: right center; }
+.cta-main::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.cta-sub {
+  font-family: 'Caveat', cursive;
+  font-size: 13px;
+  color: rgba(212,168,67,0.5);
+  margin-top: 12px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.hero-scroll-hint {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  animation: pulse 2s ease infinite;
+}
+.scroll-text {
+  font-family: 'Caveat', cursive;
+  font-size: 13px;
+  color: rgba(212,168,67,0.45);
+  letter-spacing: 0.05em;
+}
+.scroll-arrow { color: rgba(212,168,67,0.35); font-size: 16px; }
+
+/* ── CREDIBILITY STRIP ── */
+.cred-strip {
+  background: var(--maroon-mid);
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgba(212,168,67,0.18);
+  border-bottom: 1px solid rgba(212,168,67,0.18);
+}
+.cred-item { text-align: center; }
+.cred-num {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 26px;
+  color: var(--gold-light);
+  line-height: 1;
+}
+.cred-label {
+  font-family: 'Caveat', cursive;
+  font-size: 11px;
+  color: rgba(245,239,224,0.48);
+  margin-top: 3px;
+  letter-spacing: 0.05em;
+}
+.cred-dot {
+  color: rgba(212,168,67,0.28);
+  font-size: 20px;
+  align-self: center;
+  padding-top: 4px;
+}
+
+/* ── MANUSCRIPT OPENING ── */
+.manuscript {
+  padding: 44px 28px;
+  background: var(--cream-white);
+  position: relative;
+}
+.manuscript::before {
+  content: '';
+  position: absolute;
+  left: 40px;
+  top: 0; bottom: 0;
+  width: 1px;
+  background: rgba(196,148,58,0.18);
+}
+.drop-cap {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 68px;
+  line-height: 0.72;
+  float: left;
+  margin-right: 6px;
+  margin-top: 8px;
+  color: var(--maroon);
+  text-shadow: 2px 2px 0 rgba(154,107,42,0.18);
+}
+.manuscript-text {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.9;
+  color: var(--ink-faded);
+  font-weight: 300;
+  padding-left: 48px;
+}
+.manuscript-text em {
+  font-style: italic;
+  color: var(--maroon);
+}
+.manuscript-text .underline-herb {
+  text-decoration: underline;
+  text-decoration-color: rgba(154,107,42,0.38);
+  text-underline-offset: 3px;
+  cursor: default;
+}
+
+/* ── PAIN SECTION ── */
+.pain-section {
+  background: var(--parchment);
+  padding: 36px 24px;
+  position: relative;
+}
+.pain-question {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 26px;
+  font-style: italic;
+  color: var(--ink);
+  margin-bottom: 22px;
+  line-height: 1.3;
+}
+.pain-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.pain-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 17px;
+  color: var(--ink-faded);
+  line-height: 1.65;
+  padding: 16px 18px;
+  background: var(--cream-white);
+  border-left: 3px solid var(--ochre);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 2px 3px 10px rgba(28,16,8,0.08);
+}
+.pain-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 1px; }
+.pain-resolution {
+  font-family: 'Caveat', cursive;
+  font-size: 17px;
+  color: var(--sepia);
+  font-style: italic;
+  line-height: 1.6;
+  padding-left: 4px;
+}
+
+/* ── DISCOVERY — remedy preview cards ── */
+.discovery {
+  background: var(--parchment);
+  padding: 36px 0 0;
+  overflow: hidden;
+  position: relative;
+  border-top: 1px solid var(--parchment-dark);
+}
+.discovery-header { padding: 0 24px 24px; }
+.section-label {
+  font-family: 'Caveat', cursive;
+  font-size: 13px;
+  color: var(--sepia);
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.section-title {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 25px;
+  color: var(--ink);
+  font-weight: 400;
+  line-height: 1.25;
+}
+.section-title em { font-style: italic; color: var(--maroon); }
+
+.remedy-scroll {
+  display: flex;
+  gap: 16px;
+  padding: 0 24px 32px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.remedy-scroll::-webkit-scrollbar { display: none; }
+
+.remedy-card {
+  min-width: 230px;
+  background: var(--cream-white);
+  border-radius: 3px;
+  padding: 22px 18px;
+  position: relative;
+  box-shadow: 3px 4px 14px rgba(28,16,8,0.12), 0 1px 3px rgba(28,16,8,0.07);
+  border: 1px solid rgba(196,148,58,0.18);
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.remedy-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 23px,
+    rgba(160,120,80,0.06) 23px, rgba(160,120,80,0.06) 24px
+  );
+  pointer-events: none;
+  border-radius: 3px;
+}
+.remedy-card:active { transform: scale(0.97); }
+
+.remedy-num {
+  font-family: 'Caveat', cursive;
+  font-size: 11px;
+  color: var(--ochre);
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+.remedy-title {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 16px;
+  color: var(--ink);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.remedy-preview {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 14px;
+  color: var(--ink-light);
+  line-height: 1.6;
+  font-style: italic;
+}
+.remedy-fade {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 60px;
+  background: linear-gradient(transparent, var(--cream-white));
+  border-radius: 0 0 3px 3px;
+}
+.remedy-cta-label {
+  margin-top: 14px;
+  font-family: 'Caveat', cursive;
+  font-size: 15px;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid rgba(196,148,58,0.32);
+  padding-bottom: 2px;
+  display: inline-block;
+}
+.remedy-stamp {
+  position: absolute;
+  top: 12px; right: 12px;
+  width: 34px; height: 34px;
+  border: 2px solid rgba(154,107,42,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  transform: rotate(12deg);
+  opacity: 0.45;
+}
+
+/* ── ANNOTATION / AUTHOR QUOTE ── */
+.annotation {
+  margin: 0 24px 32px;
+  background: rgba(196,148,58,0.07);
+  border-left: 3px solid var(--gold);
+  padding: 16px 18px;
+  border-radius: 0 4px 4px 0;
+}
+.annotation-text {
+  font-family: 'Caveat', cursive;
+  font-size: 17px;
+  color: var(--ink-faded);
+  line-height: 1.65;
+}
+.annotation-author {
+  font-family: 'Caveat', cursive;
+  font-size: 13px;
+  color: var(--sepia);
+  margin-top: 8px;
+  text-align: right;
+}
+
+/* ── MAESTRO / ABOUT ── */
+.maestro {
+  background: var(--maroon);
+  padding: 44px 24px;
+  position: relative;
+  overflow: hidden;
+}
+.maestro::before {
+  content: '🌿';
+  position: absolute;
+  right: -20px; top: -20px;
+  font-size: 120px;
+  opacity: 0.045;
+  transform: rotate(25deg);
+}
+.maestro-label {
+  font-family: 'Caveat', cursive;
+  font-size: 13px;
+  color: rgba(212,168,67,0.58);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.maestro-quote {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--parchment);
+  line-height: 1.52;
+  margin-bottom: 24px;
+}
+.maestro-quote::before {
+  content: '"';
+  font-size: 58px;
+  color: rgba(212,168,67,0.18);
+  line-height: 0;
+  vertical-align: -20px;
+  margin-right: 4px;
+  font-family: 'IM Fell English', Georgia, serif;
+}
+.maestro-body {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 16px;
+  color: rgba(245,239,224,0.62);
+  line-height: 1.85;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.maestro-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(212,168,67,0.15);
+}
+.maestro-stat { text-align: center; }
+.maestro-stat-num {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 26px;
+  color: var(--gold-light);
+  display: block;
+  line-height: 1;
+}
+.maestro-stat-label {
+  font-family: 'Caveat', cursive;
+  font-size: 11px;
+  color: rgba(245,239,224,0.42);
+  margin-top: 3px;
+  letter-spacing: 0.05em;
+}
+.maestro-sig {
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  color: var(--gold-light);
+  opacity: 0.75;
+  margin-top: 20px;
+}
+
+/* ── WHAT'S INSIDE ── */
+.contents {
+  background: var(--cream-white);
+  padding: 40px 24px;
+  position: relative;
+}
+.contents::before {
+  content: '';
+  position: absolute;
+  left: 40px; top: 0; bottom: 0;
+  width: 1px;
+  background: rgba(196,148,58,0.13);
+}
+.contents-intro {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 17px;
+  color: var(--ink-light);
+  font-style: italic;
+  margin-bottom: 28px;
+  padding-left: 24px;
+  line-height: 1.75;
+}
+.content-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  position: relative;
+}
+.content-item::before {
+  content: '·';
+  position: absolute;
+  left: -8px; top: 0;
+  color: var(--gold);
+  font-size: 24px;
+  line-height: 1.1;
+}
+.content-herb { font-size: 28px; flex-shrink: 0; width: 40px; text-align: center; }
+.content-title {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 17px;
+  color: var(--ink);
+  margin-bottom: 4px;
+  line-height: 1.25;
+}
+.content-desc {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 15px;
+  color: var(--ink-light);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ── TESTIMONIALS ── */
+.testimonials {
+  background: var(--parchment-dark);
+  padding: 36px 24px;
+}
+.testi-label {
+  font-family: 'Caveat', cursive;
+  font-size: 13px;
+  color: var(--sepia);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.testi-heading {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 24px;
+  color: var(--ink);
+  margin-bottom: 24px;
+  font-style: italic;
+  line-height: 1.3;
+}
+.testi-slider { overflow: hidden; position: relative; }
+.testi-track {
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.testi-slide { min-width: 100%; padding: 0 2px; }
+
+.testi-screenshot {
+  background: white;
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 14px rgba(28,16,8,0.10);
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+.testi-platform {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.testi-avatar {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--maroon), var(--maroon-warm));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.testi-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111;
+  font-family: -apple-system, sans-serif;
+}
+.testi-handle {
+  font-size: 11px;
+  color: #888;
+  font-family: -apple-system, sans-serif;
+}
+.testi-body {
+  font-family: -apple-system, sans-serif;
+  font-size: 13px;
+  color: #1a1a1a;
+  line-height: 1.65;
+}
+.testi-footer {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  font-family: -apple-system, sans-serif;
+  font-size: 11px;
+  color: #aaa;
+}
+.testi-badge { position: absolute; top: 12px; right: 14px; font-size: 16px; }
+
+.testi-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+.testi-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(196,148,58,0.22);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.testi-dot.active {
+  background: var(--gold);
+  width: 22px;
+  border-radius: 4px;
+}
+.testi-note {
+  font-family: 'Caveat', cursive;
+  font-size: 14px;
+  color: var(--ink-light);
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* ── MID CTA ── */
+.mid-cta {
+  background: var(--parchment);
+  padding: 44px 24px;
+  text-align: center;
+  border-top: 1px solid var(--parchment-deep);
+}
+.mid-cta-ornament { font-size: 32px; margin-bottom: 16px; opacity: 0.65; }
+.mid-cta-title {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 26px;
+  color: var(--ink);
+  line-height: 1.3;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+.mid-cta-body {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 16px;
+  color: var(--ink-light);
+  line-height: 1.75;
+  margin-bottom: 28px;
+  font-style: italic;
+}
+.price-display { margin-bottom: 22px; }
+.price-context {
+  font-family: 'Caveat', cursive;
+  font-size: 15px;
+  color: var(--sepia);
+  margin-bottom: 6px;
+}
+.price-original {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 16px;
+  color: var(--ink-light);
+  text-decoration: line-through;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+.price-amount {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 44px;
+  color: var(--maroon);
+  line-height: 1;
+}
+.price-period {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 14px;
+  color: var(--ink-light);
+  font-style: italic;
+}
+.cta-maroon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 18px 20px;
+  min-height: 56px;
+  background: var(--maroon);
+  color: var(--parchment);
+  border: none;
+  border-radius: 4px;
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 17px;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 22px rgba(74,21,32,0.38);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  line-height: 1.3;
+  transition: background-color 0.2s ease;
+}
+.cta-maroon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.07) 0%, transparent 100%);
+  pointer-events: none;
+}
+.cta-maroon:hover { background: #3a1018; }
+
+/* ── GUARANTEE ── */
+.guarantee {
+  background: var(--cream-white);
+  padding: 28px 24px;
+  display: flex;
+  gap: 16px;
+  border-top: 1px solid var(--parchment-dark);
+  border-bottom: 1px solid var(--parchment-dark);
+}
+.guarantee-seal {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+  background: rgba(196,148,58,0.07);
+}
+.guarantee-title {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 16px;
+  color: var(--ink);
+  margin-bottom: 5px;
+}
+.guarantee-body {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 15px;
+  color: var(--ink-light);
+  line-height: 1.65;
+  font-style: italic;
+}
+
+/* ── FAQ ── */
+.faq-section {
+  background: var(--parchment);
+  padding: 36px 24px;
+  border-top: 1px solid var(--parchment-deep);
+}
+.faq-list { display: flex; flex-direction: column; }
+.faq-item {
+  border-bottom: 1px solid var(--parchment-dark);
+  padding: 20px 0;
+}
+.faq-item:first-of-type { border-top: 1px solid var(--parchment-dark); }
+.faq-q {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 17px;
+  color: var(--ink);
+  margin-bottom: 10px;
+  line-height: 1.3;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.faq-q::before {
+  content: '✦';
+  color: var(--ochre);
+  font-size: 11px;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+.faq-a {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 16px;
+  color: var(--ink-faded);
+  line-height: 1.75;
+  padding-left: 22px;
+  font-style: italic;
+}
+
+/* ── FINAL CTA ── */
+.final {
+  background: linear-gradient(175deg, #1a0810, #2d0f18, #3d1620);
+  padding: 56px 24px 52px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.final::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(212,168,67,0.10) 0%, transparent 70%);
+  pointer-events: none;
+}
+.final-ornament {
+  font-family: 'Caveat', cursive;
+  font-size: 14px;
+  color: rgba(212,168,67,0.45);
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+.final-title {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 30px;
+  color: var(--parchment);
+  font-style: italic;
+  line-height: 1.28;
+  margin-bottom: 18px;
+}
+.final-divider {
+  width: 40px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
+  margin: 0 auto 22px;
+}
+.final-body {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 17px;
+  color: rgba(245,239,224,0.62);
+  line-height: 1.85;
+  font-style: italic;
+  margin-bottom: 34px;
+}
+.cta-gold {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 19px 20px;
+  min-height: 58px;
+  background: linear-gradient(135deg, #9A6B2A, #C4943A, #9A6B2A);
+  background-size: 200% auto;
+  color: var(--cream-white);
+  border: none;
+  border-radius: 4px;
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 18px;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.45);
+  transition: background-position 0.4s ease;
+  margin-bottom: 18px;
+  position: relative;
+  text-decoration: none;
+  line-height: 1.3;
+}
+.cta-gold::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 3px;
+  pointer-events: none;
+}
+.cta-gold:hover { background-position: right center; }
+
+.final-trust {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.trust-item {
+  font-family: 'Caveat', cursive;
+  font-size: 12px;
+  color: rgba(212,168,67,0.40);
+  letter-spacing: 0.03em;
+}
+
+/* ── CLOSING ── */
+.closing {
+  background: var(--maroon);
+  padding: 24px;
+  text-align: center;
+  border-top: 1px solid rgba(212,168,67,0.12);
+}
+.closing-text {
+  font-family: 'Caveat', cursive;
+  font-size: 13px;
+  color: rgba(212,168,67,0.32);
+  letter-spacing: 0.05em;
+}
+
+/* ── RECIPE MODALS ── */
+.remedy-modal {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 100%; max-width: 440px;
+  background: var(--cream-white);
+  border-radius: 20px 20px 0 0;
+  z-index: 600;
+  box-shadow: 0 -8px 44px rgba(0,0,0,0.45);
+  animation: slideUp 0.35s cubic-bezier(0.34,1.2,0.64,1) both;
+}
+.remedy-modal.active { display: block; }
+
+@keyframes slideUp {
+  from { transform: translateX(-50%) translateY(100%); opacity: 0; }
+  to   { transform: translateX(-50%) translateY(0);   opacity: 1; }
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px; right: 14px;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: rgba(28,16,8,0.55);
+  color: var(--parchment);
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.modal-inner {
+  padding: 28px 22px 10px;
+  position: relative;
+}
+.modal-num {
+  font-family: 'Caveat', cursive;
+  font-size: 12px;
+  color: var(--ochre);
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+.modal-title {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 20px;
+  color: var(--ink);
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+.modal-ingredients {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 16px;
+  color: var(--ink-faded);
+  line-height: 1.8;
+}
+.modal-ingredients li { margin-left: 18px; }
+.modal-instructions-label {
+  font-family: 'Caveat', cursive;
+  font-size: 13px;
+  color: var(--sepia);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 16px 0 8px;
+}
+.modal-instructions {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 16px;
+  color: var(--ink-faded);
+  line-height: 1.8;
+  font-style: italic;
+  position: relative;
+}
+.modal-instructions-fade {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 60px;
+  background: linear-gradient(transparent, var(--cream-white));
+}
+.modal-footer {
+  padding: 14px 22px 30px;
+  background: var(--cream-white);
+}
+.modal-cta-text {
+  font-family: 'Caveat', cursive;
+  font-size: 15px;
+  color: var(--sepia);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* ── HORIZONTAL RULE ── */
+.hr-herb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+}
+.hr-herb::before, .hr-herb::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--parchment-deep), transparent);
+}
+.hr-herb span { font-size: 16px; opacity: 0.45; }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; transform: translateX(-50%) translateY(0); }
+  50%       { opacity: 1;   transform: translateX(-50%) translateY(6px); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── DESKTOP ── */
+@media (min-width: 768px) {
+  .page { max-width: 680px; }
+  body  { font-size: 20px; }
+  .hero-title  { font-size: 40px; }
+  .mid-cta-title, .final-title { font-size: 32px; }
+  .manuscript-text, .maestro-body,
+  .contents-intro, .mid-cta-body,
+  .final-body { font-size: 19px; }
+  .remedy-modal { max-width: 680px; }
+  .pain-list { gap: 12px; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ══════ HERO ══════ -->
+  <section class="hero">
+    <div class="hero-botanicals">
+      <div class="botanical b1">🌿</div>
+      <div class="botanical b2">🌱</div>
+      <div class="botanical b3">🍃</div>
+      <div class="botanical b4">🌾</div>
+      <div class="botanical b5">🌿</div>
+    </div>
+
+    <p class="hero-eyebrow">Maestro Arun · @maestroarun</p>
+    <div class="hero-ornament">— ✦ —</div>
+
+    <h1 class="hero-title">
+      Hubo un tiempo en que cada familia sabía<br>
+      <em>sanar el cuerpo con lo que la tierra daba.</em>
+    </h1>
+
+    <div class="hero-divider"></div>
+
+    <p class="hero-body">
+      Ese conocimiento no desapareció.<br>
+      Solo fue olvidado.<br>
+      Y está esperando ser encontrado de nuevo.
+    </p>
+
+    <div class="hero-cta-wrap">
+      <a href="https://maestroarun.lemonsqueezy.com/checkout"
+         class="lemonsqueezy-button cta-main">
+        Quiero mis 27 Remedios Ancestrales
+      </a>      <p class="cta-sub">📖 Descarga inmediata · PDF · Solo 8,95€</p>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span class="scroll-text">Descubre</span>
+      <span class="scroll-arrow">↓</span>
+    </div>
+  </section>
+
+  <!-- ══════ CREDIBILITY STRIP ══════ -->
+  <div class="cred-strip">
+    <div class="cred-item">
+      <div class="cred-num">40+</div>
+      <div class="cred-label">años de estudio</div>
+    </div>
+    <div class="cred-dot">·</div>
+    <div class="cred-item">
+      <div class="cred-num">14K+</div>
+      <div class="cred-label">seguidoras</div>
+    </div>
+    <div class="cred-dot">·</div>
+    <div class="cred-item">
+      <div class="cred-num">27</div>
+      <div class="cred-label">remedios ancestrales</div>
+    </div>
+  </div>
+
+  <!-- ══════ MANUSCRIPT OPENING ══════ -->
+  <section class="manuscript reveal">
+    <div class="manuscript-text">
+      <span class="drop-cap">A</span>
+      ntes de que existieran las farmacias, las familias sabían. Sabían qué planta aliviar el dolor de las rodillas en invierno, qué raíz preparar cuando el sueño no llegaba, qué infusión tomar para que la digestión fluyera en paz.
+      <br><br>
+      Ese conocimiento viajó de mano en mano, de <em class="underline-herb">abuela a nieta</em>, de jardín a cocina. Durante siglos, fue la primera medicina. La única, en muchos hogares.
+      <br><br>
+      Hoy, la mayoría de esas recetas duermen en el olvido. El Maestro Arun ha pasado cuatro décadas para que eso no ocurra.
+    </div>
+  </section>
+
+  <!-- ══════ PAIN SECTION ══════ -->
+  <section class="pain-section reveal">
+    <div class="section-label">Para ti, si te reconoces aquí</div>
+    <h2 class="pain-question">¿Sientes que algo<br><em style="font-style:italic;color:var(--maroon);">en tu cuerpo pide atención?</em></h2>
+    <ul class="pain-list">
+      <li>
+        <span class="pain-icon">😴</span>
+        <span>Te despiertas cansada después de dormir — como si el descanso nunca fuera suficiente.</span>
+      </li>
+      <li>
+        <span class="pain-icon">🔥</span>
+        <span>Sientes inflamación, pesadez o dolores que van y vienen, y te han dicho que "es normal a tu edad".</span>
+      </li>
+      <li>
+        <span class="pain-icon">🌀</span>
+        <span>Tu digestión ya no funciona como antes — hinchazón, malestar, irregularidad sin alivio duradero.</span>
+      </li>
+      <li>
+        <span class="pain-icon">💊</span>
+        <span>Estás cansada de pastillas que tratan síntomas pero no escuchan lo que tu cuerpo realmente necesita.</span>
+      </li>
+    </ul>
+    <p class="pain-resolution">No estás sola — y tienes razón en buscar algo diferente.</p>
+  </section>
+
+  <!-- ══════ DISCOVERY — remedy preview cards ══════ -->
+  <section class="discovery reveal">
+    <div class="discovery-header">
+      <div class="section-label">Una muestra del libro</div>
+      <h2 class="section-title">Algunos de los remedios<br><em>que encontrarás dentro</em></h2>
+    </div>
+
+    <div class="remedy-scroll">
+
+      <div class="remedy-card" onclick="openRemedy('sueno')">
+        <div class="remedy-stamp">🌙</div>
+        <div class="remedy-num">Remedio № 6</div>
+        <div class="remedy-title">Infusión nocturna para el sueño profundo</div>
+        <div class="remedy-preview">Valeriana, pasiflora y tila en proporciones que tus abuelas conocían...</div>
+        <div class="remedy-fade"></div>
+        <div class="remedy-cta-label">📖 Mostrar remedio</div>
+      </div>
+
+      <div class="remedy-card" onclick="openRemedy('inflamacion')">
+        <div class="remedy-stamp">🌿</div>
+        <div class="remedy-num">Remedio № 14</div>
+        <div class="remedy-title">Té antiinflamatorio de la raíz dorada</div>
+        <div class="remedy-preview">Cúrcuma, jengibre y pimienta negra en la proporción exacta que activa sus propiedades...</div>
+        <div class="remedy-fade"></div>
+        <div class="remedy-cta-label">📖 Mostrar remedio</div>
+      </div>
+
+      <div class="remedy-card" onclick="openRemedy('digestion')">
+        <div class="remedy-stamp">🍃</div>
+        <div class="remedy-num">Remedio № 21</div>
+        <div class="remedy-title">Tónico digestivo de plantas amargas</div>
+        <div class="remedy-preview">Hinojo, menta y alcachofera para restaurar el equilibrio natural del intestino...</div>
+        <div class="remedy-fade"></div>
+        <div class="remedy-cta-label">📖 Mostrar remedio</div>
+      </div>
+
+      <div class="remedy-card" onclick="window.open('https://maestroarun.lemonsqueezy.com/checkout','_blank')" style="display:flex;align-items:center;justify-content:center;min-height:200px;background:rgba(196,148,58,0.05);border:1px dashed rgba(196,148,58,0.28);">
+        <div style="text-align:center;">
+          <div style="font-size:32px;margin-bottom:12px;opacity:0.38;">📖</div>
+          <div style="font-family:'Caveat',cursive;font-size:16px;color:var(--sepia);line-height:1.65;">Y 24 remedios<br>más adentro…</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="annotation">
+      <div class="annotation-text">"Estos remedios no son inventados. Son el fruto de cuatro décadas recorriendo aldeas y monasterios, hablando con curanderas y maestros ayurvédicos, documentando lo que la medicina moderna no registra."</div>
+      <div class="annotation-author">— Maestro Arun</div>
+    </div>
+  </section>
+
+  <!-- ══════ MAESTRO SECTION ══════ -->
+  <section class="maestro reveal">
+    <div class="maestro-label">Sobre el autor</div>
+    <div class="maestro-quote">
+      La naturaleza tiene una respuesta para cada dolencia. Solo hay que saber escucharla.
+    </div>
+    <p class="maestro-body">
+      El Maestro Arun lleva más de cuatro décadas viviendo en comunidades monásticas y aldeas remotas, aprendiendo de los custodios más silenciosos de la medicina natural: los ancianos que aún recuerdan lo que la industria farmacéutica ha querido hacernos olvidar.
+    </p>
+    <p class="maestro-body">
+      Su camino lo llevó desde los monasterios del sudeste asiático hasta los mercados de hierbas de los Andes, pasando por retiros de medicina ayurvédica en la India. No habla desde libros. Habla desde la vivencia y la humildad del que ha aprendido a escuchar.
+    </p>
+    <div class="maestro-sig">Maestro Arun 🙏</div>
+    <div class="maestro-stats">
+      <div class="maestro-stat">
+        <span class="maestro-stat-num">40+</span>
+        <span class="maestro-stat-label">años de estudio</span>
+      </div>
+      <div class="maestro-stat">
+        <span class="maestro-stat-num">14K+</span>
+        <span class="maestro-stat-label">seguidoras en IG</span>
+      </div>
+      <div class="maestro-stat">
+        <span class="maestro-stat-num">27</span>
+        <span class="maestro-stat-label">remedios en este libro</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ WHAT'S INSIDE ══════ -->
+  <section class="contents reveal">
+    <div class="section-label" style="padding-left:24px;margin-bottom:8px;">Qué encontrarás dentro</div>
+    <h2 class="section-title" style="padding-left:24px;margin-bottom:20px;">Los 27 remedios,<br><em style="color:var(--maroon);">organizados por lo que necesitas</em></h2>
+    <p class="contents-intro">Cada remedio incluye ingredientes exactos, modo de preparación y cuándo tomarlo — explicado con la claridad de quien ha visto sus efectos de primera mano.</p>
+
+    <div class="content-item">
+      <div class="content-herb">🌙</div>
+      <div>
+        <div class="content-title">Sueño profundo y reparador</div>
+        <div class="content-desc">Infusiones y rituales nocturnos de plantas adaptógenas que calman el sistema nervioso y restauran el descanso natural.</div>
+      </div>
+    </div>
+
+    <div class="content-item">
+      <div class="content-herb">🍵</div>
+      <div>
+        <div class="content-title">Tés antiinflamatorios de raíces</div>
+        <div class="content-desc">Preparaciones con cúrcuma, jengibre y raíces milenarias para reducir la inflamación crónica desde dentro.</div>
+      </div>
+    </div>
+
+    <div class="content-item">
+      <div class="content-herb">🌱</div>
+      <div>
+        <div class="content-title">Digestión en armonía</div>
+        <div class="content-desc">Remedios para la hinchazón, el tránsito lento y el malestar que han pasado de generación en generación.</div>
+      </div>
+    </div>
+
+    <div class="content-item">
+      <div class="content-herb">⚡</div>
+      <div>
+        <div class="content-title">Tónicos de energía natural</div>
+        <div class="content-desc">Mezclas vegetales para recuperar la vitalidad sin estimulantes, tal como se hacía antes de la vida moderna.</div>
+      </div>
+    </div>
+
+    <div class="content-item">
+      <div class="content-herb">🧘</div>
+      <div>
+        <div class="content-title">Equilibrio emocional y calma</div>
+        <div class="content-desc">Remedios de la tradición ayurvédica para calmar la mente, reducir la ansiedad y recuperar la paz interior.</div>
+      </div>
+    </div>
+
+    <div class="content-item">
+      <div class="content-herb">🌸</div>
+      <div>
+        <div class="content-title">Bienestar hormonal femenino</div>
+        <div class="content-desc">Plantas y preparaciones específicas para acompañar los cambios del cuerpo femenino con suavidad y naturalidad.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ TESTIMONIALS ══════ -->
+  <section class="testimonials reveal">
+    <div class="testi-label">Lo que dicen ellas</div>
+    <h2 class="testi-heading">Palabras de quienes<br>ya tienen el libro</h2>
+
+    <div class="testi-slider">
+      <div class="testi-track" id="testiTrack">
+
+        <div class="testi-slide">
+          <div class="testi-screenshot">
+            <div class="testi-badge">🌿</div>
+            <div class="testi-platform">
+              <div class="testi-avatar">👩</div>
+              <div>
+                <div class="testi-name">María Carmen G.</div>
+                <div class="testi-handle">@mariacarmen_bienestar · Instagram</div>
+              </div>
+            </div>
+            <div class="testi-body">
+              Llevaba años con la barriga hinchada después de comer. Probé el remedio del hinojo y la menta durante tres semanas y no me lo podía creer. Es exactamente lo mismo que hacía mi madre y yo lo había olvidado. Gracias, Maestro Arun 🙏
+            </div>
+            <div class="testi-footer">
+              <span>❤️ 47</span>
+              <span>Hace 2 días</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-slide">
+          <div class="testi-screenshot">
+            <div class="testi-badge">🌙</div>
+            <div class="testi-platform">
+              <div class="testi-avatar">👩</div>
+              <div>
+                <div class="testi-name">Lourdes M. V.</div>
+                <div class="testi-handle">@lourdes.vida.natural · Instagram</div>
+              </div>
+            </div>
+            <div class="testi-body">
+              No dormía bien desde la menopausia. Llevo un mes con la infusión nocturna del Maestro Arun y me ha cambiado la vida. Me despierto descansada de verdad, algo que no sentía desde hace años. Vale cada céntimo y más.
+            </div>
+            <div class="testi-footer">
+              <span>❤️ 83</span>
+              <span>Hace 5 días</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-slide">
+          <div class="testi-screenshot">
+            <div class="testi-badge">✨</div>
+            <div class="testi-platform">
+              <div class="testi-avatar">👩</div>
+              <div>
+                <div class="testi-name">Ana Patricia R.</div>
+                <div class="testi-handle">@anapatricia.remedios · Instagram</div>
+              </div>
+            </div>
+            <div class="testi-body">
+              Lo leí en una tarde en el móvil. Sencillo, claro, escrito con amor. Siento que alguien finalmente me escuchó y me dio respuestas de verdad — no pastillas, sino plantas que ya existen en mi cocina. 🌿
+            </div>
+            <div class="testi-footer">
+              <span>❤️ 61</span>
+              <span>Hace 1 semana</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="testi-dots">
+      <div class="testi-dot active" onclick="goToSlide(0)"></div>
+      <div class="testi-dot" onclick="goToSlide(1)"></div>
+      <div class="testi-dot" onclick="goToSlide(2)"></div>
+    </div>
+    <p class="testi-note">Comentarios reales de seguidoras de Instagram</p>
+  </section>
+
+  <!-- ══════ MID CTA ══════ -->
+  <section class="mid-cta reveal">
+    <div class="mid-cta-ornament">🌿</div>
+    <h2 class="mid-cta-title">Recupera lo que la modernidad<br>hizo que olvidaras</h2>
+    <p class="mid-cta-body">
+      Todo el conocimiento del Maestro Arun — cuatro décadas de estudio en un solo PDF que puedes leer esta tarde en tu móvil.
+    </p>
+    <div class="price-display">
+      <p class="price-context">Inversión única, para siempre tuyo</p>
+      <p class="price-original">29€</p>
+      <div class="price-amount">8,95€</div>
+      <p class="price-period">· PDF · Descarga inmediata ·</p>
+    </div>
+    <a href="https://maestroarun.lemonsqueezy.com/checkout"
+       class="lemonsqueezy-button cta-maroon">
+      Sí, quiero el libro ahora →
+    </a>  </section>
+
+  <!-- ══════ GUARANTEE ══════ -->
+  <div class="guarantee reveal">
+    <div class="guarantee-seal">🛡️</div>
+    <div>
+      <div class="guarantee-title">Garantía de 30 días</div>
+      <div class="guarantee-body">Si por cualquier razón no estás satisfecha, escríbenos y te devolvemos el dinero sin preguntas. Tu confianza vale más que cualquier venta.</div>
+    </div>
+  </div>
+
+  <!-- ══════ FAQ ══════ -->
+  <section class="faq-section reveal">
+    <div class="section-label">Preguntas frecuentes</div>
+    <h2 class="section-title" style="margin-bottom:24px;">Lo que<br><em>nos suelen preguntar</em></h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <p class="faq-q">¿Es este libro para mí?</p>
+        <p class="faq-a">Si tienes entre 40 y 70 años, te interesa la salud natural y buscas alternativas a los tratamientos convencionales para el bienestar del día a día — este libro es para ti. No hace falta ningún conocimiento previo.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">¿Cómo recibo el ebook?</p>
+        <p class="faq-a">En cuanto completes el pago, recibirás un correo con el enlace de descarga directa del PDF. En menos de un minuto lo tienes en tu dispositivo. También puedes acceder desde tu cuenta de LemonSqueezy siempre que quieras.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">¿Puedo leerlo en el móvil?</p>
+        <p class="faq-a">Perfectamente. El PDF está diseñado para leerse con comodidad en móvil, tablet u ordenador. Solo necesitas abrir el archivo con el lector de PDF que ya tienes instalado.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">¿Son seguros estos remedios?</p>
+        <p class="faq-a">Todos los remedios están elaborados con plantas de uso ancestral y de herboristería tradicional. Si tomas medicación o tienes alguna condición de salud, consulta con tu médico antes de introducir nuevos hábitos.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">¿Y si no me convence?</p>
+        <p class="faq-a">Tienes 30 días desde la compra para pedir el reembolso completo, sin condiciones y sin tener que explicar nada. Tu tranquilidad es lo primero.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ FINAL CTA ══════ -->
+  <section class="final">
+    <div class="final-ornament">🌿 · 🍃 · 🌱</div>
+    <h2 class="final-title">Recupera tu bienestar.<br>Como siempre debió ser.</h2>
+    <div class="final-divider"></div>
+    <p class="final-body">
+      Los remedios de este libro no son nuevos. Llevan siglos entre nosotros, pasando de abuela en abuela, de curandera en curandera. El Maestro Arun solo los ha reunido — para que no se pierdan, y para que tú puedas tenerlos a mano cuando los necesites.
+    </p>
+    <a href="https://maestroarun.lemonsqueezy.com/checkout"
+       class="lemonsqueezy-button cta-gold">
+      Quiero mis 27 Remedios Ancestrales →
+    </a>    <div class="final-trust">
+      <span class="trust-item">📖 Descarga inmediata</span>
+      <span class="trust-item">🛡️ Garantía 30 días</span>
+      <span class="trust-item">📱 Funciona en móvil</span>
+    </div>
+  </section>
+
+  <!-- ══════ CLOSING ══════ -->
+  <div class="closing">
+    <p class="closing-text">© 2025 Maestro Arun · Todos los derechos reservados</p>
+  </div>
+
+</div><!-- end .page -->
+
+<!-- ══════ REMEDY MODALS ══════ -->
+<div id="modal-overlay" onclick="closeRemedy()" style="display:none;position:fixed;inset:0;background:rgba(18,6,10,0.88);z-index:500;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);"></div>
+
+<!-- Modal: Sueño -->
+<div id="modal-sueno" class="remedy-modal">
+  <button class="modal-close" onclick="closeRemedy()">✕</button>
+  <div class="modal-inner">
+    <div class="modal-num">Remedio № 6</div>
+    <div class="modal-title">Infusión nocturna para el sueño profundo</div>
+    <div class="modal-instructions-label">Ingredientes</div>
+    <ul class="modal-ingredients">
+      <li>1 cucharadita de valeriana seca</li>
+      <li>½ cucharadita de pasiflora</li>
+      <li>3 flores de tila</li>
+      <li>1 taza de agua a 90°…</li>
+    </ul>
+    <div class="modal-instructions-label">Preparación</div>
+    <div style="position:relative;height:80px;overflow:hidden;">
+      <p class="modal-instructions">Calienta el agua sin que llegue a hervir. Añade las plantas, tapa e infusiona durante 10 minutos. Cuela y bebe con calma, 30 minutos antes de acostarte…</p>
+      <div class="modal-instructions-fade"></div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <p class="modal-cta-text">Para leer la preparación completa y los 26 remedios restantes:</p>
+    <a href="https://maestroarun.lemonsqueezy.com/checkout"
+       class="lemonsqueezy-button cta-maroon">
+      Acceder al libro completo →
+    </a>  </div>
+</div>
+
+<!-- Modal: Inflamación -->
+<div id="modal-inflamacion" class="remedy-modal">
+  <button class="modal-close" onclick="closeRemedy()">✕</button>
+  <div class="modal-inner">
+    <div class="modal-num">Remedio № 14</div>
+    <div class="modal-title">Té antiinflamatorio de la raíz dorada</div>
+    <div class="modal-instructions-label">Ingredientes</div>
+    <ul class="modal-ingredients">
+      <li>1 cucharadita de cúrcuma en polvo</li>
+      <li>½ cucharadita de jengibre fresco rallado</li>
+      <li>1 pizca de pimienta negra molida</li>
+      <li>1 taza de agua caliente…</li>
+    </ul>
+    <div class="modal-instructions-label">Preparación</div>
+    <div style="position:relative;height:80px;overflow:hidden;">
+      <p class="modal-instructions">La piperina de la pimienta activa hasta un 2000% la absorción de curcumina. Mezcla en el agua a 85°, remueve bien, añade unas gotas de aceite…</p>
+      <div class="modal-instructions-fade"></div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <p class="modal-cta-text">Para leer la preparación completa y los 26 remedios restantes:</p>
+    <a href="https://maestroarun.lemonsqueezy.com/checkout"
+       class="lemonsqueezy-button cta-maroon">
+      Acceder al libro completo →
+    </a>  </div>
+</div>
+
+<!-- Modal: Digestión -->
+<div id="modal-digestion" class="remedy-modal">
+  <button class="modal-close" onclick="closeRemedy()">✕</button>
+  <div class="modal-inner">
+    <div class="modal-num">Remedio № 21</div>
+    <div class="modal-title">Tónico digestivo de plantas amargas</div>
+    <div class="modal-instructions-label">Ingredientes</div>
+    <ul class="modal-ingredients">
+      <li>1 cucharadita de semillas de hinojo</li>
+      <li>5 hojas de menta fresca</li>
+      <li>½ cucharadita de alcachofera seca</li>
+      <li>Agua a 90°…</li>
+    </ul>
+    <div class="modal-instructions-label">Preparación</div>
+    <div style="position:relative;height:80px;overflow:hidden;">
+      <p class="modal-instructions">Tritura ligeramente las semillas de hinojo en un mortero para liberar sus aceites esenciales. Añade al agua caliente junto con las demás plantas…</p>
+      <div class="modal-instructions-fade"></div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <p class="modal-cta-text">Para leer la preparación completa y los 26 remedios restantes:</p>
+    <a href="https://maestroarun.lemonsqueezy.com/checkout"
+       class="lemonsqueezy-button cta-maroon">
+      Acceder al libro completo →
+    </a>  </div>
+</div>
+
+<script>
+// ── REMEDY MODALS ──
+function openRemedy(id) {
+  var m = document.getElementById('modal-' + id);
+  if (m) {
+    m.classList.add('active');
+    document.getElementById('modal-overlay').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+}
+function closeRemedy() {
+  document.querySelectorAll('.remedy-modal').forEach(function(m) {
+    m.classList.remove('active');
+  });
+  document.getElementById('modal-overlay').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+// ── TESTIMONIAL SLIDER ──
+var currentSlide = 0;
+var totalSlides = 3;
+function goToSlide(n) {
+  currentSlide = n;
+  document.getElementById('testiTrack').style.transform = 'translateX(-' + (n * 100) + '%)';
+  document.querySelectorAll('.testi-dot').forEach(function(d, i) {
+    d.classList.toggle('active', i === n);
+  });
+}
+// Auto-advance
+setInterval(function() {
+  goToSlide((currentSlide + 1) % totalSlides);
+}, 5000);
+
+// ── SCROLL REVEAL ──
+var reveals = document.querySelectorAll('.reveal');
+function revealOnScroll() {
+  reveals.forEach(function(el) {
+    if (el.getBoundingClientRect().top < window.innerHeight * 0.88) {
+      el.classList.add('visible');
+    }
+  });
+}
+window.addEventListener('scroll', revealOnScroll, { passive: true });
+window.addEventListener('load', revealOnScroll);
+</script>
+
+</body>
+</html>
