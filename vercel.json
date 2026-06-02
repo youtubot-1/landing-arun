@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/curcuma",
+      "destination": "https://tidd.ly/3RBVUBI",
+      "permanent": false
+    },
+    {
+      "source": "/remedios",
+      "destination": "https://shop.beacons.ai/maestroarun/a336fd36-bd17-4d80-bc07-fc854233b956?pageViewSource=lib_view&referrer=https%3A%2F%2Fbeacons.ai%2Fmaestroarun&show_back_button=true",
+      "permanent": false
+    }
+  ]
+}
