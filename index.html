@@ -1,4 +1,4 @@
-<!-- LemonSqueezy checkout URL is live: maestroarun.lemonsqueezy.com/checkout -->
+<!-- Gumroad checkout overlay: maestroarun.gumroad.com/l/remedios -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -26,7 +26,7 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Caveat:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Caveat:wght@400;600&display=swap" rel="stylesheet"></noscript>
 
-<script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+<script src="https://gumroad.com/js/gumroad.js"></script>
 
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -1142,6 +1142,15 @@ body::before {
   .remedy-modal { max-width: 680px; }
   .pain-list { gap: 12px; }
 }
+
+/* neutralise Gumroad's injected button styles */
+a.gumroad-button {
+  background-image: none !important;
+  padding: unset !important;
+  font-family: unset !important;
+  font-size: unset !important;
+  color: unset !important;
+}
 </style>
 </head>
 <body>
@@ -1174,8 +1183,9 @@ body::before {
     </p>
 
     <div class="hero-cta-wrap">
-      <a href="https://maestroarun.lemonsqueezy.com/checkout"
-         class="lemonsqueezy-button cta-main">
+      <a href="https://maestroarun.gumroad.com/l/remedios"
+         class="gumroad-button cta-main"
+         data-gumroad-overlay-checkout="true">
         Quiero mis 27 Remedios Ancestrales
       </a>      <p class="cta-sub">📖 Descarga inmediata · PDF · Solo 8,95€</p>
     </div>
@@ -1277,7 +1287,7 @@ body::before {
         <div class="remedy-cta-label">📖 Mostrar remedio</div>
       </div>
 
-      <div class="remedy-card" onclick="window.open('https://maestroarun.lemonsqueezy.com/checkout','_blank')" style="display:flex;align-items:center;justify-content:center;min-height:200px;background:rgba(196,148,58,0.05);border:1px dashed rgba(196,148,58,0.28);">
+      <div class="remedy-card" onclick="window.open('https://maestroarun.gumroad.com/l/remedios','_blank')" style="display:flex;align-items:center;justify-content:center;min-height:200px;background:rgba(196,148,58,0.05);border:1px dashed rgba(196,148,58,0.28);">
         <div style="text-align:center;">
           <div style="font-size:32px;margin-bottom:12px;opacity:0.38;">📖</div>
           <div style="font-family:'Caveat',cursive;font-size:16px;color:var(--sepia);line-height:1.65;">Y 24 remedios<br>más adentro…</div>
@@ -1468,8 +1478,9 @@ body::before {
       <div class="price-amount">8,95€</div>
       <p class="price-period">· PDF · Descarga inmediata ·</p>
     </div>
-    <a href="https://maestroarun.lemonsqueezy.com/checkout"
-       class="lemonsqueezy-button cta-maroon">
+    <a href="https://maestroarun.gumroad.com/l/remedios"
+       class="gumroad-button cta-maroon"
+       data-gumroad-overlay-checkout="true">
       Sí, quiero el libro ahora →
     </a>  </section>
 
@@ -1493,7 +1504,7 @@ body::before {
       </div>
       <div class="faq-item">
         <p class="faq-q">¿Cómo recibo el ebook?</p>
-        <p class="faq-a">En cuanto completes el pago, recibirás un correo con el enlace de descarga directa del PDF. En menos de un minuto lo tienes en tu dispositivo. También puedes acceder desde tu cuenta de LemonSqueezy siempre que quieras.</p>
+        <p class="faq-a">En cuanto completes el pago, recibirás un correo con el enlace de descarga directa del PDF. En menos de un minuto lo tienes en tu dispositivo. También puedes acceder desde tu cuenta de Gumroad siempre que quieras.</p>
       </div>
       <div class="faq-item">
         <p class="faq-q">¿Puedo leerlo en el móvil?</p>
@@ -1518,8 +1529,9 @@ body::before {
     <p class="final-body">
       Los remedios de este libro no son nuevos. Llevan siglos entre nosotros, pasando de abuela en abuela, de curandera en curandera. El Maestro Arun solo los ha reunido — para que no se pierdan, y para que tú puedas tenerlos a mano cuando los necesites.
     </p>
-    <a href="https://maestroarun.lemonsqueezy.com/checkout"
-       class="lemonsqueezy-button cta-gold">
+    <a href="https://maestroarun.gumroad.com/l/remedios"
+       class="gumroad-button cta-gold"
+       data-gumroad-overlay-checkout="true">
       Quiero mis 27 Remedios Ancestrales →
     </a>    <div class="final-trust">
       <span class="trust-item">📖 Descarga inmediata</span>
@@ -1560,8 +1572,9 @@ body::before {
   </div>
   <div class="modal-footer">
     <p class="modal-cta-text">Para leer la preparación completa y los 26 remedios restantes:</p>
-    <a href="https://maestroarun.lemonsqueezy.com/checkout"
-       class="lemonsqueezy-button cta-maroon">
+    <a href="https://maestroarun.gumroad.com/l/remedios"
+       class="gumroad-button cta-maroon"
+       data-gumroad-overlay-checkout="true">
       Acceder al libro completo →
     </a>
   </div>
@@ -1589,8 +1602,9 @@ body::before {
   </div>
   <div class="modal-footer">
     <p class="modal-cta-text">Para leer la preparación completa y los 26 remedios restantes:</p>
-    <a href="https://maestroarun.lemonsqueezy.com/checkout"
-       class="lemonsqueezy-button cta-maroon">
+    <a href="https://maestroarun.gumroad.com/l/remedios"
+       class="gumroad-button cta-maroon"
+       data-gumroad-overlay-checkout="true">
       Acceder al libro completo →
     </a>
   </div>
@@ -1618,8 +1632,9 @@ body::before {
   </div>
   <div class="modal-footer">
     <p class="modal-cta-text">Para leer la preparación completa y los 26 remedios restantes:</p>
-    <a href="https://maestroarun.lemonsqueezy.com/checkout"
-       class="lemonsqueezy-button cta-maroon">
+    <a href="https://maestroarun.gumroad.com/l/remedios"
+       class="gumroad-button cta-maroon"
+       data-gumroad-overlay-checkout="true">
       Acceder al libro completo →
     </a>
   </div>
